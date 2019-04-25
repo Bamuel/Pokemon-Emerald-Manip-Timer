@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokémon Emerald Manip Timer</title>
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<h1>Pokémon Emerald Manipulation Timer</h1>
+<div id="content">
+    <img src="res/mudkip.png" id="mudkippic" style="float: right; display: none">
+    <img src="res/abra.png" id="abrapic" style="float: right; display: none;">
+    <img src="res/rayquaza.png" id="rayquazapic" style="float: right; display: none;">
+    <img src="res/taillow.png" id="taillowpic" style="float: right; display: none;">
+    <img src="res/wingull.png" id="wingullpic" style="float: right; display: none;">
+    <h3 id="timer">00:00.000</h3>
+    <div id="selectPokemon">
+        <input type="radio" name="pokemon" value="mudkip" onclick="stop(); mudkip()"> Mudkip FlowTimer offsets: <input type="text" id="mudkipoffsets" name="MudkipOffsets" value="10132/17116/23260/36343/63444"><br>
+        <input type="radio" name="pokemon" value="abra" onclick="stop();abra()"> Abra FlowTimer offsets: <input type="text" id="Abraoffsets" name="Abraoffsets" value="10142/29040/31590"><br>
+        <input type="radio" name="pokemon" value="taillow" onclick="stop();taillow()"> Taillow :<br>
+        <input type="radio" name="pokemon" value="wingull" onclick="stop();wingull()"> Wingull offsets : 10132/23700/26550<br>
+        <input type="radio" name="pokemon" value="Rayquaza" onclick="stop(); rayquaza()"> Rayquaza offsets: 14172/41060/44001
+    </div>
+    <div>
+        <div id="controls">
+            <button id="start" type="button" onclick="start()">Start</button>
+            <button id="reset" type="button" onclick="stop()">Stop</button>
+            <button id="settings" type="button" disabled>Settings</button>
+            <button id="import" type="button" disabled>Import Timers</button>
+            <button id="export" type="button" disabled>Export Timers</button>
+        </div>
+    </div>
+</div>
+<script src="main.js" type="application/javascript"></script>
+</html>
