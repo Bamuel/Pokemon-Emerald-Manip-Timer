@@ -16,19 +16,18 @@
     <img src="res/other.png" id="otherpic" style="float: right; display: none;">
     <h3 id="timer">00:00.000</h3>
     <div id="selectPokemon">
-        <input type="radio" name="pokemon" value="mudkip" onclick="stop(); mudkip();"> Mudkip FlowTimer offsets: <input
+        <input type="radio" name="pokemon" value="mudkip" onclick="stop(); mudkip();"> Mudkip &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;offsets: <input
             type="text" id="mudkipoffsets" name="MudkipOffsets" placeholder="10132/17116/23260/36343/63444"><br>
-        <input type="radio" name="pokemon" value="abra" onclick="stop();abra()"> Abra FlowTimer offsets: <input
+        <input type="radio" name="pokemon" value="abra" onclick="stop();abra()"> Abra &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;offsets: <input
             type="text" id="Abraoffsets" name="Abraoffsets" placeholder="10142/29040/31590"><br>
-        <input type="radio" name="pokemon" value="taillow" onclick="stop();taillow()"> Taillow offsets: <input
+        <input type="radio" name="pokemon" value="taillow" onclick="stop();taillow()"> Taillow &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;offsets: <input
             type="text" id="taillowOffsets" name="taillowOffsets" placeholder="0000/0000/0000/0000"><br>
-        <input type="radio" name="pokemon" value="wingull" onclick="stop();wingull()"> Wingull offsets: <input
+        <input type="radio" name="pokemon" value="wingull" onclick="stop();wingull()"> Wingull &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;offsets: <input
             type="text" id="wingullOffsets" name="wingullOffsets" placeholder="10132/23700/26550"><br>
-        <input type="radio" name="pokemon" value="Rayquaza" onclick="stop(); rayquaza()"> Rayquaza offsets: <input
+        <input type="radio" name="pokemon" value="Rayquaza" onclick="stop(); rayquaza()"> Rayquaza &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;offsets: <input
             type="text" id="rayquazaOffsets" name="rayquazaOffsets" placeholder="14172/41060/44001"><br>
-        <input type="radio" name="pokemon" value="Other" onclick="stop(); other()"> Other offsets: <input
+        <input type="radio" name="pokemon" value="Other" onclick="stop(); other()"> Other &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;offsets: <input
             type="text" id="otherOffsets" name="otherOffsets" placeholder="0000/0000/0000/0000">
-
     </div>
     <div>
         <div id="controls">
@@ -41,22 +40,26 @@
     </div>
 
     <div id="settingsdiv">
+        <hr>
         <pre>Settings</pre>
-
         <p>Sound :
-            <select name="cars">
-                <option value="beep">beep.wav</option>
+            <select id="sound" name="sound">
+                <option value="beep.wav">beep.wav</option>
+                <option value="clack.wav">clack.wav</option>
+                <option value="clap.wav">clap.wav</option>
+                <option value="click1.wav">click.wav</option>
+                <option value="ping1.wav">ping1.wav</option>
+                <option value="ping2.wav">ping2.wav</option>
             </select>
         </p>
-        <p>Action Interval :
+        <p>Beep Interval :
             <input type="number" name="actionInterval" id="actionInterval" value="500" style="width:75px">
         </p>
-
-        <p>Action Count :
+        <p>Beep Count :
             <input type="number" name="actionCount" id="actionCount" value="3" style="width:75px">
         </p>
-
-
+        <hr>
+        <pre>Software made by Bamuel</pre>
     </div>
 </div>
 <script src="main.js" type="application/javascript"></script>

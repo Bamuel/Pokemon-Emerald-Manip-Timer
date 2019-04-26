@@ -1,5 +1,6 @@
 function beep() {
-    var beep = new Audio("res/beep.wav");
+    var x = document.getElementById("sound").value;
+    var beep = new Audio("res/"+ x);
     if (d > 0) {
         beep.play();
         console.log(d);
@@ -9,7 +10,7 @@ function beep() {
 //Default
 
 var beeps = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]; //lazy to create auto sized array
-//LOL crash my program if you have 55 different splits at once
+//program crashes if you have 55 different splits at once
 
 function mudkip(run) {
     stop();
