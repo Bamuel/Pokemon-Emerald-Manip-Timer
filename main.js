@@ -7,6 +7,11 @@ function beep() {
     }
 }
 
+document.body.onkeyup = function(e){
+    stop();
+    start();
+};
+
 //Default
 
 var beeps = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]; //lazy to create auto sized array
